@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pulse — Pulseworks Growth Edition 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
+      <rect width="80" height="56" fill="#7B3F9E"/>
+      <text x="40" y="34" text-anchor="middle" font-family="serif" font-size="14" font-weight="900" fill="white">PW</text>
+    </svg>
+  </template>
+  <style>
+    body { margin: 0; padding: 20px; background: #1a1a2e; font-family: 'Montserrat', Arial, sans-serif; }
+    * { box-sizing: border-box; }
+    .email-wrapper { max-width: 680px; margin: 0 auto; background: #ffffff; }
+
+    /* HEADER */
+    .header { background: #7B3F9E; padding: 30px 40px; text-align: center; }
+    .header-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 900; color: #ffffff; letter-spacing: 5px; text-transform: uppercase; }
+    .header-tagline { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.7); letter-spacing: 3px; text-transform: uppercase; margin-top: 5px; }
+    .header-issue { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 2px; text-transform: uppercase; margin-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 12px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(150deg, #0f0520 0%, #1e0a3c 45%, #0f0520 100%); padding: 64px 44px; text-align: center; }
+    .hero-urgency-bar { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 12px 24px; margin-bottom: 36px; display: inline-block; }
+    .hero-urgency-bar span { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+    .hero-headline { font-family: 'Playfair Display', Georgia, serif; font-size: 50px; font-weight: 900; color: #ffffff; line-height: 1.1; margin: 0 0 14px; }
+    .hero-inst { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.55); letter-spacing: 4px; text-transform: uppercase; margin: 0 0 28px; }
+    .hero-body { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.78); line-height: 1.75; margin: 0 0 32px; }
+    .hero-pillars { display: flex; justify-content: center; gap: 0; margin: 0 0 36px; }
+    .hero-pillar { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #c9a9e8; letter-spacing: 0.5px; padding: 6px 18px; border-right: 1px solid rgba(201,169,232,0.25); }
+    .hero-pillar:last-child { border-right: none; }
+    .hero-cta { display: inline-block; background: #7B3F9E; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 17px 42px; text-decoration: none; border-radius: 4px; }
+    .hero-fine { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: 14px; color: rgba(255,255,255,0.45); margin-top: 18px; }
+
+    /* DIVIDER */
+    .divider { height: 4px; background: linear-gradient(90deg, #4a1f6e, #7B3F9E, #b39ddb, #7B3F9E, #4a1f6e); }
+
+    /* SECTION BASE */
+    .section-img { width: 100%; display: block; }
+    .section-body { padding: 46px 46px 52px; }
+    .eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #7B3F9E; margin-bottom: 12px; }
+    .section-title { font-family: 'Playfair Display', Georgia, serif; font-size: 31px; font-weight: 700; color: #160929; line-height: 1.18; margin: 0 0 14px; }
+    .section-sub { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: 16px; color: #5a5a7a; line-height: 1.55; margin: 0 0 20px; }
+    .body-text { font-family: 'Montserrat', sans-serif; font-size: 14px; color: #3d3d5c; line-height: 1.78; margin: 0 0 22px; }
+    .feat-list { list-style: none; padding: 0; margin: 0 0 28px; }
+    .feat-list li { font-family: 'Montserrat', sans-serif; font-size: 14px; color: #2e2e48; padding: 6px 0 6px 22px; position: relative; line-height: 1.6; }
+    .feat-list li::before { content: '◆'; color: #7B3F9E; position: absolute; left: 0; font-size: 7px; top: 10px; }
+    .cta-btn { display: inline-block; background: #7B3F9E; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 14px 36px; text-decoration: none; border-radius: 4px; }
+    .cta-outline { display: inline-block; border: 2px solid #7B3F9E; color: #7B3F9E; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 12px 34px; text-decoration: none; border-radius: 4px; background: transparent; }
+    .badge-rev { display: inline-block; background: #276221; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 13px; border-radius: 20px; margin-bottom: 14px; margin-right: 6px; }
+    .badge-new { display: inline-block; background: #7B3F9E; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 13px; border-radius: 20px; margin-bottom: 14px; }
+
+    /* DARK SECTION */
+    .dark-body { background: #0f0520; padding: 46px 46px 52px; }
+    .dark-body .eyebrow { color: #c9a9e8; }
+    .dark-body .section-title { color: #ffffff; }
+    .dark-body .section-sub { color: rgba(255,255,255,0.6); }
+    .dark-body .body-text { color: rgba(255,255,255,0.72); }
+    .dark-body .feat-list li { color: rgba(255,255,255,0.78); }
+    .dark-body .cta-btn { background: #fff; color: #0f0520; }
+
+    /* QUOTE */
+    .quote-block { background: #f4effe; border-left: 4px solid #7B3F9E; padding: 18px 22px; margin: 20px 0 26px; border-radius: 0 6px 6px 0; }
+    .quote-text { font-family: 'Lora', serif; font-style: italic; font-size: 14px; color: #3d3d5c; line-height: 1.7; margin: 0 0 8px; }
+    .quote-attr { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; color: #7B3F9E; letter-spacing: 1.5px; text-transform: uppercase; }
+
+    /* IMG PAIR */
+    .img-pair { display: flex; gap: 3px; margin-bottom: 28px; }
+    .img-pair img { flex: 1; width: 50%; object-fit: cover; display: block; }
+
+    /* PLATFORM CALLOUT */
+    .platform-bar { background: #1e0a3c; padding: 32px 40px; }
+    .platform-bar-label { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c9a9e8; text-align: center; margin-bottom: 20px; }
+    .platform-cards { display: flex; gap: 14px; }
+    .p-card { flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(201,169,232,0.2); border-radius: 8px; overflow: hidden; }
+    .p-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
+    .p-card-body { padding: 18px 20px 22px; }
+    .p-card-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .p-card-text { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.65; }
+
+    /* TWO TILE */
+    .two-tile { display: flex; gap: 16px; margin: 20px 0 26px; }
+    .tile { flex: 1; background: #f4effe; border-radius: 8px; padding: 22px 20px; }
+    .tile-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; color: #7B3F9E; text-transform: uppercase; margin-bottom: 8px; }
+    .tile-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #160929; margin-bottom: 8px; }
+    .tile-text { font-family: 'Montserrat', sans-serif; font-size: 14px; color: #4a4a68; line-height: 1.65; margin: 0; }
+
+    /* STATS */
+    .stats-bar { background: #7B3F9E; padding: 36px 40px; display: flex; justify-content: space-around; text-align: center; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: #fff; display: block; line-height: 1; }
+    .stat-label { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 6px; display: block; }
+
+    /* SOCIAL PROOF */
+    .proof-strip { background: #f0eef5; padding: 36px 40px; text-align: center; }
+    .proof-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #aaa; margin-bottom: 22px; }
+    .logos-row { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .logo-text { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* TEAM */
+    .team-wrap { background: #0f0520; padding: 56px 40px; text-align: center; }
+    .team-h { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .team-sub { font-family: 'Lora', serif; font-style: italic; font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 42px; }
+    .team-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .member { text-align: center; width: 120px; }
+    .member-circle { width: 88px; height: 88px; border-radius: 50%; background: #3a1060; margin: 0 auto 12px; overflow: hidden; border: 2px solid rgba(123,63,158,0.4); display: flex; align-items: center; justify-content: center; }
+    .member-circle img { width: 100%; height: 100%; object-fit: cover; }
+    .member-init { font-family: 'Playfair Display', serif; font-size: 30px; color: rgba(255,255,255,0.35); }
+    .member-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #fff; }
+    .member-role { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #c9a9e8; margin-top: 4px; line-height: 1.4; }
+    .team-note { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.8); margin-top: 36px; font-style: italic; }
+
+    /* ON THE HORIZON */
+    .horizon-wrap { background: linear-gradient(160deg, #080212 0%, #160929 100%); padding: 56px 44px; text-align: center; }
+    .horizon-eye { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c9a9e8; margin-bottom: 12px; }
+    .horizon-h { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 8px; }
+    .horizon-sub { font-family: 'Lora', serif; font-style: italic; font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
+    .horizon-cards { display: flex; gap: 18px; justify-content: center; }
+    .h-card { flex: 1; background: linear-gradient(160deg, rgba(123,63,158,0.18), rgba(123,63,158,0.04)); border: 1px solid rgba(123,63,158,0.35); border-radius: 12px; padding: 30px 24px; text-align: left; }
+    .h-card-icon { font-size: 30px; margin-bottom: 16px; }
+    .h-card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .h-card-text { font-family: 'Montserrat', sans-serif; font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0; }
+    .horizon-note { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.2); margin-top: 36px; font-style: italic; }
+
+    /* FINAL CTA */
+    .final-cta { background: #7B3F9E; padding: 52px 44px; text-align: center; }
+    .final-cta h2 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 900; color: #fff; margin: 0 0 14px; line-height: 1.2; }
+    .final-cta p { font-family: 'Montserrat', sans-serif; font-size: 14px; color: rgba(255,255,255,0.75); margin: 0 0 30px; line-height: 1.7; }
+    .final-cta a { display: inline-block; background: #ffffff; color: #7B3F9E; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 17px 44px; text-decoration: none; border-radius: 4px; }
+    .final-fine { font-family: 'Lora', serif; font-style: italic; font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 18px; }
+
+    /* FOOTER */
+    .footer { background: #080212; padding: 44px 40px 36px; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: #7B3F9E; letter-spacing: 5px; text-transform: uppercase; }
+    .footer-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.75); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; }
+    .footer-hr { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 22px 0; }
+    .footer-links { margin: 14px 0; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 11px; color: #c9a9e8; text-decoration: none; margin: 0 12px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: #7B3F9E; text-decoration: none; margin: 0 10px; letter-spacing: 0.5px; }
+    .footer-addr { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.2); line-height: 1.8; margin-top: 22px; }
+    .footer-addr a { color: rgba(255,255,255,0.2); text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <!-- ═══ 1. HEADER ═══ -->
+  <div class="header">
+    <div class="header-logo">PULSEWORKS</div>
+    <div class="header-tagline">A Leader in Virtual Reality and Immersive Entertainment</div>
+
+  </div>
+
+  <!-- ═══ 2. HERO ═══ -->
+  <div class="hero">
+    <div class="hero-urgency-bar"><span>⚡ &nbsp;2027 Partnership Spots Are Filling Fast</span></div>
+    <h1 class="hero-headline">More Visitors. More Revenue.<br><em>More Wonder.</em></h1>
+    <p class="hero-inst">For your Institution</p>
+    <p class="hero-body">Pulseworks partners with zoos, science centers and museums to grow visitor engagement and revenues.</p>
+    <div class="hero-pillars">
+      <span class="hero-pillar">Grow Attendance</span>
+      <span class="hero-pillar">Grow Revenue</span>
+      <span class="hero-pillar">Grow Satisfaction</span>
+    </div>
+    <a href="#" class="hero-cta">Connect With Our Growth Advisors</a>
+    <p class="hero-fine" style="font-size:16px;"><span style="color:#ffffffd2;">Pulseworks operates via revenue-share model. We succeed when you succeed.</span></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 3. OUTDOOR VR CONTAINER ═══ -->
+  <div>
+    <img src="images/outdoor_vr_interior.jpg" alt="Outdoor VR Container — wildlife mural interior with motion seats" class="section-img" style="max-height: 460px; object-fit: cover; object-position: center;">
+    <div class="section-body">
+      <span class="badge-rev">Revenue Generator</span>
+      <div class="eyebrow">Flagship Experience</div>
+      <h2 class="section-title">Step Through the Doors<br>Into Another World</h2>
+      <p class="section-sub">Your all-season VR destination. Climate-controlled, fully immersive, and built to generate premium ticket revenue 365 days a year.</p>
+      <p class="body-text">The Pulseworks Outdoor VR Container transforms a corner of your grounds into a gateway to ecosystems on the other side of the globe. Guests step through the doors and into something they've never experienced: eight seats, floor-to-ceiling custom wildlife murals, pneumatic motion seating, wireless VR headsets, and 4D effects that put you right inside the wild.</p>
+      <ul class="feat-list">
+        <li>8-seat immersive theater with pneumatic motion platform</li>
+        <li>Full-wall custom murals</li>
+        <li>4D effects: air blasts, ankle ticklers, haptic feedback &amp; scent</li>
+        <li>Wireless VR headsets — no cables, full freedom of movement</li>
+        <li>Climate-controlled for all-weather, year-round operation</li>
+        <li>Widely available content to fit your institution</li>
+        <li>Revenue-share model — no upfront financial risk</li>
+      </ul>
+      <div class="img-pair">
+        <img src="images/outdoor_vr_guests.jpg" alt="Guests experiencing VR at Brevard Zoo" style="height: 200px; object-fit: cover; object-position: center;">
+        <img src="images/outdoor_vr_exterior.jpg" alt="Outdoor VR Container exterior — black and pink panels with glass doors" style="height: 200px; object-fit: cover;">
+      </div>
+      <a href="#" class="cta-btn">Explore the Revenue Potential for Your Location &nbsp;→</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 4. TREKKING THE COSMOS ═══ -->
+  <div>
+    <img src="images/trekking_banner.png" alt="Trekking the Cosmos — To the Moon &amp; Mars — Pulseworks" class="section-img" style="max-height: 320px; object-fit: cover; object-position: center top;">
+    <div class="dark-body">
+      <span class="badge-new">Now Booking 2027</span>
+      <div class="eyebrow" style="color:#c9a9e8;">Portable &nbsp;·&nbsp; Easy to Set Up</div>
+      <h2 class="section-title" style="color:#fff;">Walk on the Moon.<br>Explore Mars.<br>Experience the Universe.</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);">Up to 7 guests explore the cosmos together — untethered, walk-around VR. No permanent installation. Just wonder.</p>
+      <p class="body-text">Trekking the Cosmos runs on our VR Odyssey platform — the most versatile immersive experience you can offer. Guests move freely together through five cosmic environments, sharing the experience in real time. It sets up and breaks down in hours. Your operations team will love it as much as your visitors do.</p>
+      <ul class="feat-list">
+        <li>Up to 7 guests simultaneously. True walk-around, untethered VR</li>
+        <li>5-scene space journey: Lunar surface → Mars colonies → Galaxy → Black Hole</li>
+        <li>Portable and easy to set up. No permanent installation required</li>
+        <li>Social &amp; collaborative. Guests can interact with each other inside VR</li>
+      </ul>
+      <div class="img-pair" style="gap:4px;">
+        <img src="images/trekking_guests.png" alt="Family experiencing Trekking the Cosmos VR together" style="height: 210px; object-fit: cover; flex: 1.3; object-position: center top;">
+        <img src="images/trekking_blackhole.png" alt="Black hole scene inside Trekking the Cosmos VR" style="height: 210px; object-fit: cover; flex: 0.7;">
+      </div>
+      <a href="#" class="cta-btn" style="background-color: rgb(42, 1, 129);"><span style="color: rgb(255, 255, 255);">Explore this Space Journey</span></a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 5. INDOOR 4-SEAT MOTION UNIT ═══ -->
+  <div>
+    <img src="images/indoor_4seat_real.jpg" alt="Indoor 4-Seat VR Motion Unit installed at science center" class="section-img" style="max-height: 400px; object-fit: cover; object-position: center 30%;">
+    <div class="section-body">
+      <span class="badge-rev">Revenue Generator</span>
+      <div class="eyebrow">For Galleries &amp; Science Centers</div>
+      <h2 class="section-title">Wow Your Guests<br>with VR Inside</h2>
+      <p class="section-sub">The Indoor 4-Seat Motion Unit brings the full Pulseworks experience inside your existing footprint.</p>
+      <p class="body-text">Designed for science centers, natural history museums, and any institution with floor space, the Indoor 4-Seat Motion Unit delivers the same powerful combination of motion seating, wireless VR headsets, and premium immersive content — all in a compact, self-contained package that fits right inside your galleries or lobby.</p>
+      <ul class="feat-list">
+        <li>4-seat pneumatic motion platform</li>
+        <li>Widely available content to fit your institution</li>
+        <li>Ideal for lobbies, existing gallery spaces, and theaters</li>
+        <li>Revenue-share model. Zero upfront financial risk</li>
+      </ul>
+
+      <a href="#" class="cta-btn">Explore Indoor VR for Your Space &nbsp;→</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 6. MICHAEL MULLER UNDERWATER SERIES ═══ -->
+  <div>
+    <div style="background: linear-gradient(160deg, #00111e 0%, #002b44 60%, #00111e 100%); min-height: 280px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+      <div>
+        <span class="badge-new" style="background: #0077b6;">Coming Q4 2026</span>
+        <div style="font-size: 44px; margin: 16px 0 14px; opacity: 0.55; letter-spacing: 8px;">🦈 &nbsp; 🐋 &nbsp; 🦭</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#fff; margin:0 0 12px; line-height:1.15;">Michael Muller<br>Underwater Series</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">The world's most daring underwater photographer.<br>Now inside your institution.</p>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="eyebrow">A Voyage Into the Ocean</div>
+      <p class="body-text">Famed underwater photographer and filmmaker Michael Muller spent 18 months traveling from the Galápagos Islands to Cuba to the Arctic, capturing wildlife encounters that have never been seen in immersive VR. Two titles are in production now, expected Q4 2026:</p>
+      <div class="two-tile">
+        <div class="tile" style="border-top: 3px solid #0077b6;">
+          <div class="tile-title">Galápagos</div>
+          <p class="tile-text">Sea lions, whale sharks, marine iguanas. The most pristine ocean ecosystems on Earth, captured in breathtaking VR. A living National Geographic experience.</p>
+        </div>
+        <div class="tile" style="border-top: 3px solid #001f3f;">
+          <div class="tile-title">Sharks</div>
+          <p class="tile-text">Great whites, hammerheads, tiger sharks face to face. Muller's most iconic encounters reimagined for your visitors' most unforgettable moment.</p>
+        </div>
+      </div>
+      <div class="quote-block" style="background:#e8f4fb; border-left-color:#0077b6;">
+        <p class="quote-text">Available on our Outdoor VR Container and Indoor 4-Seat Motion Units. The same 200TB of stunning footage, two premium experiences for every type of institution.</p>
+        <span class="quote-attr" style="color:#0077b6;">Available Across Pulseworks Platforms</span>
+      </div>
+      <a href="#" class="cta-outline" style="border-color:#0077b6; color:#0077b6;">Let's connect to learn more</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 7. VR SAFARI ═══ -->
+  <div>
+    <div style="background: linear-gradient(160deg, #0f2010 0%, #1c4010 50%, #0f2010 100%); min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+      <div>
+        <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:16px;">Now Available</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px;">VR Safari</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:17px; color:rgba(255,255,255,0.7); margin:0;">Enter Africa's Great Rift Valley.</p>
+      </div>
+    </div>
+    <img src="images/VR_SAFARI.png" alt="VR Safari filming in the African wilderness" class="section-img" style="max-height:300px; object-fit:cover; object-position:center 30%;">
+    <div class="section-body" style="background:#f7f4fb;">
+      <div class="eyebrow">Immersive Wildlife Experience</div>
+      <p class="body-text">Transport your visitors to one of the most biodiverse regions on Earth. VR Safari places guests face-to-face with African elephants crossing the savanna, eye-level with a leopard in the acacia treetops, and within arm's reach of Mountain Gorillas in their highland rainforest habitat.</p>
+      <ul class="feat-list">
+        <li>An exciting exploration of Africa's Great Rift Valley</li>
+        <li>Stunning shots of African elephants, Leopard, Cheetahs, Mountain Gorillas and more</li>
+        <li>Motion-synchronized 4D effects</li>
+      </ul>
+      <a href="#" class="cta-btn">Learn More About VR Safari &nbsp;→</a>
+    </div>
+  </div>
+
+  <!-- ═══ 8. PLATFORM CALLOUT ═══ -->
+  <div class="platform-bar">
+    <div class="platform-bar-label">VR Available — Indoors &amp; Outdoors</div>
+    <div class="platform-cards">
+      <div class="p-card">
+        <img src="images/outdoor_vr_exterior.jpg" alt="Outdoor VR Container" style="width:100%; height:160px; object-fit:cover; object-position: center 40%; display:block;">
+        <div class="p-card-body">
+          <div class="p-card-title">Outdoor VR Container</div>
+          <div class="p-card-text">Permanent all-weather destination &nbsp;·&nbsp; 8 seats &nbsp;·&nbsp; 4D motion + effects &nbsp;·&nbsp; Custom wildlife murals &nbsp;·&nbsp; Year-round revenue engine</div>
+        </div>
+      </div>
+      <div class="p-card">
+        <img src="images/indoor_4seat_real.jpg" alt="Indoor 4-Seat Motion Unit" style="width:100%; height:160px; object-fit:cover; object-position: center 30%; display:block;">
+        <div class="p-card-body">
+          <div class="p-card-title">Indoor 4-Seat Motion Unit</div>
+          <div class="p-card-text">4-seat motion platform + effects &nbsp;·&nbsp; Custom wildlife signage &nbsp;·&nbsp; Year-round revenue engine</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 9. DIGITAL LEARNING PACK ═══ -->
+  <div>
+    <div style="background: linear-gradient(135deg, #7B3F9E 0%, #4a1f6e 100%); padding: 56px 44px; text-align: center;">
+      <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.5); text-transform:uppercase; margin-bottom:14px;">Add-On Revenue Stream</div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:34px; font-weight:900; color:#fff; margin:0 0 18px; line-height:1.18;">Digital Learning Pack</h2>
+      <ul style="list-style:none; padding:0; margin:0 0 18px; text-align:left; display:inline-block;">
+        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">A simple add-on sold at online checkout</li>
+        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">Zero downloads required — any device, instant access</li>
+        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">Guests experience it at the institution and take it home</li>
+      </ul>
+      <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:18px; color:rgba(255,255,255,0.65); margin:0;">Turn one visit into a lasting experience.</p>
+    </div>
+    <img src="images/digital_learning_pack.jpg" alt="Digital Learning Pack — No Download Required, works on any device" class="section-img" style="width:480px; display:block; margin:0 auto;">
+    <div class="section-body">
+      <span class="badge-rev">Revenue Generator</span>
+      <div class="eyebrow">Frictionless Digital Add-On</div>
+      <p class="body-text">The Digital Learning Pack is your easiest new revenue stream, offered right at the moment of online ticket purchase. No app, no download, any device. Visitors arrive more engaged, explore more deeply, and leave with content that extends the experience long after they go home.</p>
+      <div style="display:flex; gap:14px; margin:20px 0 26px;">
+        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
+          <div style="font-size:28px; margin-bottom:10px;">🎫</div>
+          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">Pre-Visit</div>
+          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Digital enhancement sold at checkout. Frictionless upsell</p>
+        </div>
+        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
+          <div style="font-size:28px; margin-bottom:10px;">📱</div>
+          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">During Visit</div>
+          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Interactive visitor guide. No download, any device, instant access</p>
+        </div>
+        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
+          <div style="font-size:28px; margin-bottom:10px;">🎓</div>
+          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">Post-Visit</div>
+          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Educational content + digital keepsake to take home</p>
+        </div>
+      </div>
+      <div class="quote-block">
+        <p class="quote-text">"Easy to use and informational. Definitely recommend it is a fun experience overall."</p>
+        <span class="quote-attr">★★★★★ — Visitor Feedback</span>
+      </div>
+      <a href="#" class="cta-btn">Learn More About the Digital Learning Pack</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 10. MISSION: WILD EXPLORER ═══ -->
+  <div>
+    <div style="background: linear-gradient(160deg, #0d2010 0%, #163020 100%); min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+      <div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.18;">Mission:<br>Wild Explorer</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">An exciting scavenger hunt for families</p>
+      </div>
+    </div>
+    <img src="images/wildlife_explorer_zoomed_in.png" alt="Family enjoying Wild Explorer scavenger hunt at museum" class="section-img">
+    <div class="section-body" style="background:#f7f4fb;">
+      <span class="badge-new" style="margin-left:4px;">Launching Soon</span>
+      <div class="eyebrow">Family Experience Add-On</div>
+      <p class="body-text">Mission: Wild Explorer helps families explore the institution in a fun, educational scavenger-hunt. Families receive RFID-enabled Explorer Badges and follow clues through your exhibits, collecting physical collectible trading cards, scanning QR-based puzzle stations, and unlocking digital achievements along the way. It deepens engagement with your existing collection and keeps families coming back to complete their set.</p>
+      <ul class="feat-list">
+        <li>RFID Explorer Badges. Unique to each visit, touchless interaction</li>
+        <li>Physical collectible trading cards dispensed throughout the institution</li>
+        <li>QR-based puzzle stations woven into existing exhibits</li>
+        <li>Take-home digital content extends engagement beyond the visit</li>
+        <li>Fully branded to your institution; from finding animals at a zoo to airplanes on an aircraft carrier</li>
+      </ul>
+      <a href="#" class="cta-btn">Bring Wild Explorer to Your Institution &nbsp;→</a>
+    </div>
+  </div>
+
+  <!-- ═══ 11. STATS BAR ═══ -->
+  <div class="stats-bar">
+    <div>
+      <span class="stat-num">50+</span>
+      <span class="stat-label">Partner Institutions</span>
+    </div>
+    <div>
+      <span class="stat-num">$0</span>
+      <span class="stat-label">Upfront Risk to You</span>
+    </div>
+    <div>
+      <span class="stat-num">2027</span>
+      <span class="stat-label">Spots Filling Now</span>
+    </div>
+  </div>
+
+  <!-- ═══ SOCIAL PROOF STRIP ═══ -->
+  <div class="proof-strip">
+    <div class="proof-label">Trusted by Leading Institutions</div>
+    <div class="logos-row">
+      <span class="logo-text">Brevard Zoo</span>
+      <span class="logo-text">MOSI</span>
+      <span class="logo-text">Smithsonian NASM</span>
+      <span class="logo-text">National Air Force Museum</span>
+      <span class="logo-text">USS Midway</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 12. MEET THE TEAM ═══ -->
+  <div class="team-wrap">
+    <h2 class="team-h">Meet the Team</h2>
+    <p class="team-sub">The people behind the wonder</p>
+    <div class="team-grid">
+      <div class="member">
+        <div class="member-circle"><span class="member-init">R</span></div>
+        <div class="member-name">Raj</div>
+        <div class="member-role">CEO &amp; Founder</div>
+      </div>
+      <div class="member">
+        <div class="member-circle"><span class="member-init">P</span></div>
+        <div class="member-name">Patanjali</div>
+        <div class="member-role">Operations</div>
+      </div>
+      <div class="member">
+        <div class="member-circle"><span class="member-init">O</span></div>
+        <div class="member-name">Orion</div>
+        <div class="member-role">Experience &amp; Content</div>
+      </div>
+      <div class="member">
+        <div class="member-circle"><span class="member-init">H</span></div>
+        <div class="member-name">Hanna</div>
+        <div class="member-role">Product</div>
+      </div>
+      <div class="member">
+        <div class="member-circle"><span class="member-init">T</span></div>
+        <div class="member-name">Tania</div>
+        <div class="member-role">Product &amp; AI</div>
+      </div>
+    </div>
+    <p class="team-note">We can perhaps add a group picture of all the folks in the Atlanta office?</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 13. ON THE HORIZON ═══ -->
+  <div class="horizon-wrap">
+    <div class="horizon-eye">R&amp;D &amp; Innovation</div>
+    <h2 class="horizon-h">On the Horizon</h2>
+    <p class="horizon-sub">"Always Building What's Next..."</p>
+    <div class="horizon-cards">
+      <div class="h-card">
+        <div class="h-card-title">Immersive Audio &amp; Visitor Guides</div>
+        <p class="h-card-text">Immersive audio storytelling tours that bring your exhibits to life. Available in multiple languages. Guests wear headsets and experience rich, narrated audio journeys woven through your existing collection. A powerful new way to deepen engagement across diverse audiences.</p>
+      </div>
+    </div>
+    <p class="horizon-note" style="font-size:12px; color:rgba(255,255,255,0.918);">R&amp;D renders from Orion — coming soon</p>
+  </div>
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <div class="final-cta">
+    <h2>Ready to Grow in 2027?</h2>
+    <p>2027 partnership spots are filling fast. Let's find the right Pulseworks experience for your institution — zero financial risk, all the wonder, all the upside.</p>
+    <a href="#">Connect With a Growth Advisor</a>
+    <p class="final-fine">Let's explore ways you can grow!</p>
+  </div>
+
+  <!-- ═══ 14. FOOTER ═══ -->
+  <div class="footer">
+    <div class="footer-logo">PULSEWORKS</div>
+    <div class="footer-tag">We Offer Wonder!</div>
+    <hr class="footer-hr">
+    <div class="footer-links">
+      <a href="#">Website</a>
+      <a href="#">Our Work</a>
+      <a href="#">Get in Touch</a>
+    </div>
+
+    <hr class="footer-hr">
+    <div class="footer-addr" style="color:rgb(255,255,255);">
+      Pulseworks &nbsp;·&nbsp; Virtual Reality &amp; Immersive Entertainment<br>
+      © 2026 Pulseworks. All rights reserved.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
