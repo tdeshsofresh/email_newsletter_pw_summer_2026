@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Pulse — Pulseworks Growth Edition 2026</title>
+  <title>The Pulse — Pulseworks Zoo Edition 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <template id="__bundler_thumbnail">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
@@ -20,7 +20,6 @@
     .header { background: #7B3F9E; padding: 30px 40px; text-align: center; }
     .header-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 900; color: #ffffff; letter-spacing: 5px; text-transform: uppercase; }
     .header-tagline { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.7); letter-spacing: 3px; text-transform: uppercase; margin-top: 5px; }
-    .header-issue { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 2px; text-transform: uppercase; margin-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 12px; }
 
     /* HERO */
     .hero { background: linear-gradient(150deg, #0f0520 0%, #1e0a3c 45%, #0f0520 100%); padding: 64px 44px; text-align: center; }
@@ -33,7 +32,6 @@
     .hero-pillar { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #c9a9e8; letter-spacing: 0.5px; padding: 6px 18px; border-right: 1px solid rgba(201,169,232,0.25); }
     .hero-pillar:last-child { border-right: none; }
     .hero-cta { display: inline-block; background: #7B3F9E; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 17px 42px; text-decoration: none; border-radius: 4px; }
-    .hero-fine { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: 14px; color: rgba(255,255,255,0.45); margin-top: 18px; }
 
     /* DIVIDER */
     .divider { height: 4px; background: linear-gradient(90deg, #4a1f6e, #7B3F9E, #b39ddb, #7B3F9E, #4a1f6e); }
@@ -53,15 +51,6 @@
     .badge-rev { display: inline-block; background: #276221; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 13px; border-radius: 20px; margin-bottom: 14px; margin-right: 6px; }
     .badge-new { display: inline-block; background: #7B3F9E; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 13px; border-radius: 20px; margin-bottom: 14px; }
 
-    /* DARK SECTION */
-    .dark-body { background: #0f0520; padding: 46px 46px 52px; }
-    .dark-body .eyebrow { color: #c9a9e8; }
-    .dark-body .section-title { color: #ffffff; }
-    .dark-body .section-sub { color: rgba(255,255,255,0.6); }
-    .dark-body .body-text { color: rgba(255,255,255,0.72); }
-    .dark-body .feat-list li { color: rgba(255,255,255,0.78); }
-    .dark-body .cta-btn { background: #fff; color: #0f0520; }
-
     /* QUOTE */
     .quote-block { background: #f4effe; border-left: 4px solid #7B3F9E; padding: 18px 22px; margin: 20px 0 26px; border-radius: 0 6px 6px 0; }
     .quote-text { font-family: 'Lora', serif; font-style: italic; font-size: 14px; color: #3d3d5c; line-height: 1.7; margin: 0 0 8px; }
@@ -70,28 +59,13 @@
     /* IMG PAIR */
     .img-pair { display: flex; gap: 3px; margin-bottom: 28px; }
     .img-pair img { flex: 1; width: 50%; object-fit: cover; display: block; }
-
-    /* PLATFORM CALLOUT */
-    .platform-bar { background: #1e0a3c; padding: 32px 40px; }
-    .platform-bar-label { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c9a9e8; text-align: center; margin-bottom: 20px; }
-    .platform-cards { display: flex; gap: 14px; }
-    .p-card { flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(201,169,232,0.2); border-radius: 8px; overflow: hidden; }
-    .p-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
-    .p-card-body { padding: 18px 20px 22px; }
-    .p-card-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-    .p-card-text { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.65; }
+    .img-pair .img-ph { flex: 1; }
 
     /* TWO TILE */
     .two-tile { display: flex; gap: 16px; margin: 20px 0 26px; }
     .tile { flex: 1; background: #f4effe; border-radius: 8px; padding: 22px 20px; }
-    .tile-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; color: #7B3F9E; text-transform: uppercase; margin-bottom: 8px; }
     .tile-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #160929; margin-bottom: 8px; }
     .tile-text { font-family: 'Montserrat', sans-serif; font-size: 14px; color: #4a4a68; line-height: 1.65; margin: 0; }
-
-    /* STATS */
-    .stats-bar { background: #7B3F9E; padding: 36px 40px; display: flex; justify-content: space-around; text-align: center; }
-    .stat-num { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: #fff; display: block; line-height: 1; }
-    .stat-label { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 6px; display: block; }
 
     /* SOCIAL PROOF */
     .proof-strip { background: #f0eef5; padding: 36px 40px; text-align: center; }
@@ -106,7 +80,6 @@
     .team-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
     .member { text-align: center; width: 120px; }
     .member-circle { width: 88px; height: 88px; border-radius: 50%; background: #3a1060; margin: 0 auto 12px; overflow: hidden; border: 2px solid rgba(123,63,158,0.4); display: flex; align-items: center; justify-content: center; }
-    .member-circle img { width: 100%; height: 100%; object-fit: cover; }
     .member-init { font-family: 'Playfair Display', serif; font-size: 30px; color: rgba(255,255,255,0.35); }
     .member-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #fff; }
     .member-role { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #c9a9e8; margin-top: 4px; line-height: 1.4; }
@@ -117,12 +90,9 @@
     .horizon-eye { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c9a9e8; margin-bottom: 12px; }
     .horizon-h { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 8px; }
     .horizon-sub { font-family: 'Lora', serif; font-style: italic; font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
-    .horizon-cards { display: flex; gap: 18px; justify-content: center; }
-    .h-card { flex: 1; background: linear-gradient(160deg, rgba(123,63,158,0.18), rgba(123,63,158,0.04)); border: 1px solid rgba(123,63,158,0.35); border-radius: 12px; padding: 30px 24px; text-align: left; }
-    .h-card-icon { font-size: 30px; margin-bottom: 16px; }
+    .h-card { background: linear-gradient(160deg, rgba(123,63,158,0.18), rgba(123,63,158,0.04)); border: 1px solid rgba(123,63,158,0.35); border-radius: 12px; padding: 30px 24px; text-align: left; }
     .h-card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 12px; }
     .h-card-text { font-family: 'Montserrat', sans-serif; font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0; }
-    .horizon-note { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.2); margin-top: 36px; font-style: italic; }
 
     /* FINAL CTA */
     .final-cta { background: #7B3F9E; padding: 52px 44px; text-align: center; }
@@ -136,11 +106,69 @@
     .footer-logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: #7B3F9E; letter-spacing: 5px; text-transform: uppercase; }
     .footer-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.75); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; }
     .footer-hr { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 22px 0; }
-    .footer-links { margin: 14px 0; }
     .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 11px; color: #c9a9e8; text-decoration: none; margin: 0 12px; }
-    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: #7B3F9E; text-decoration: none; margin: 0 10px; letter-spacing: 0.5px; }
     .footer-addr { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.2); line-height: 1.8; margin-top: 22px; }
-    .footer-addr a { color: rgba(255,255,255,0.2); text-decoration: none; }
+
+    /* IMAGE PLACEHOLDER */
+    .img-ph {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: repeating-linear-gradient(45deg, #1a2a1a, #1a2a1a 10px, #1c2c1c 10px, #1c2c1c 20px);
+    }
+    .img-ph span {
+      font-family: monospace;
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      line-height: 1.7;
+      padding: 16px;
+    }
+    .img-ph-warm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: repeating-linear-gradient(45deg, #1e1400, #1e1400 10px, #231800 10px, #231800 20px);
+    }
+    .img-ph-warm span {
+      font-family: monospace;
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      line-height: 1.7;
+      padding: 16px;
+    }
+
+    /* SAFARI EXPERIENCE CARDS */
+    .exp-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(0,0,0,0.07);
+    }
+    .exp-card-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .exp-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #160929;
+      margin: 0 0 8px;
+    }
+    .exp-card-sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 15px;
+      color: #5a5a7a;
+      margin: 0 0 16px;
+    }
   </style>
 </head>
 <body>
@@ -150,148 +178,82 @@
   <div class="header">
     <div class="header-logo">PULSEWORKS</div>
     <div class="header-tagline">A Leader in Virtual Reality and Immersive Entertainment</div>
-
   </div>
 
   <!-- ═══ 2. HERO ═══ -->
   <div class="hero">
     <div class="hero-urgency-bar"><span>⚡ &nbsp;2027 Partnership Spots Are Filling Fast</span></div>
-    <h1 class="hero-headline">More Visitors. More Revenue.<br><em>More Wonder.</em></h1>
-    <p class="hero-inst">For your Institution</p>
-    <p class="hero-body">Pulseworks partners with zoos, science centers and museums to grow visitor engagement and revenues.</p>
+    <h1 class="hero-headline">More Engagement. More Revenue.<br><em>More Wonder.</em></h1>
+    <p class="hero-inst">For Your Zoos &amp; Aquariums</p>
+    <p class="hero-body">Pulseworks partners with leading zoos to grow visitor engagement and revenues.</p>
     <div class="hero-pillars">
       <span class="hero-pillar">Grow Attendance</span>
       <span class="hero-pillar">Grow Revenue</span>
       <span class="hero-pillar">Grow Satisfaction</span>
     </div>
     <a href="#" class="hero-cta">Connect With Our Growth Advisors</a>
-    <p class="hero-fine" style="font-size:16px;"><span style="color:#ffffffd2;">Pulseworks operates via revenue-share model. We succeed when you succeed.</span></p>
+    <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:#ffffffd2; margin-top:18px;">Pulseworks operates via revenue-share model. We succeed when you succeed.</p>
   </div>
 
   <div class="divider"></div>
 
-  <!-- ═══ 3. OUTDOOR VR CONTAINER ═══ -->
+  <!-- ═══ 3. OUTDOOR CONTAINER VR ═══ -->
   <div>
     <div style="background: linear-gradient(160deg, #1a0a2e 0%, #2d1250 60%, #1a0a2e 100%); min-height: 200px; display: flex; align-items: center; justify-content: center; padding: 48px 44px; text-align: center;">
       <div>
         <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:14px;">Flagship Experience</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Outdoor VR</h2>
+        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Outdoor Container VR</h2>
         <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">Your all-season VR destination — right on your grounds.</p>
       </div>
     </div>
-    <img src="images/outdoor_vr_interior.jpg" alt="Outdoor VR Container — wildlife mural interior with motion seats" class="section-img" style="max-height: 460px; object-fit: cover; object-position: center;">
+    <img src="images/outdoor_vr_interior.jpg" alt="Outdoor Container VR — wildlife mural interior with motion seats" class="section-img" style="max-height: 460px; object-fit: cover; object-position: center;">
     <div class="section-body">
       <span class="badge-rev">Revenue Generator</span>
       <div class="eyebrow">Flagship Experience</div>
       <h2 class="section-title">Step Through the Doors<br>Into Another World</h2>
       <p class="section-sub">Your all-season VR destination. Climate-controlled, fully immersive, and built to generate premium ticket revenue 365 days a year.</p>
-      <p class="body-text">The Pulseworks Outdoor VR Container transforms a corner of your grounds into a gateway to ecosystems on the other side of the globe. Guests step through the doors and into something they've never experienced: eight seats, floor-to-ceiling custom wildlife murals, pneumatic motion seating, wireless VR headsets, and 4D effects that put you right inside the wild.</p>
+      <p class="body-text">The Pulseworks Outdoor Container VR transforms a corner of your zoo into a gateway to ecosystems on the other side of the globe. Guests step through the doors and into something they've never experienced: eight seats, floor-to-ceiling custom wildlife murals, pneumatic motion seating, wireless VR headsets, and 4D effects that put you right inside the wild.</p>
       <ul class="feat-list">
         <li>8-seat immersive theater with pneumatic motion platform</li>
         <li>Full-wall custom murals</li>
         <li>4D effects: air blasts, ankle ticklers, haptic feedback &amp; scent</li>
         <li>Wireless VR headsets — no cables, full freedom of movement</li>
         <li>Climate-controlled for all-weather, year-round operation</li>
-        <li>Widely available content to fit your institution</li>
+        <li>Widely available content to fit your zoo</li>
         <li>Revenue-share model — no upfront financial risk</li>
       </ul>
       <div class="img-pair">
-        <img src="images/outdoor_vr_guests.jpg" alt="Guests experiencing VR at Brevard Zoo" style="height: 200px; object-fit: cover; object-position: center;">
-        <img src="images/outdoor_vr_exterior.jpg" alt="Outdoor VR Container exterior — black and pink panels with glass doors" style="height: 200px; object-fit: cover;">
+        <img src="images/outdoor_vr_guests.jpg" alt="Guests experiencing VR" style="height: 200px; object-fit: cover; object-position: center;">
+        <img src="images/outdoor_vr_exterior.jpg" alt="Outdoor Container VR exterior" style="height: 200px; object-fit: cover;">
       </div>
-      <a href="#" class="cta-btn">Explore the Revenue Potential for Your Location &nbsp;→</a>
+      <a href="#" class="cta-btn">Explore the Revenue Potential for Your Zoo &nbsp;→</a>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- ═══ 4. TREKKING THE COSMOS ═══ -->
-  <div>
-    <div style="background: linear-gradient(160deg, #0f0520 0%, #1e0a3c 60%, #0f0520 100%); min-height: 200px; display: flex; align-items: center; justify-content: center; padding: 48px 44px; text-align: center;">
-      <div>
-        <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:14px;">Walk-Around VR Experience</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Portable VR</h2>
-        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">A wow experience that's easy to setup &amp; take-down</p>
-      </div>
-    </div>
-    <img src="images/trekking_banner.png" alt="Trekking the Cosmos — To the Moon &amp; Mars — Pulseworks" class="section-img" style="max-height: 320px; object-fit: cover; object-position: center top;">
-    <div class="dark-body">
-      <span class="badge-new">Now Booking 2027</span>
-      <div class="eyebrow" style="color:#c9a9e8;">Portable &nbsp;·&nbsp; Easy to Set Up</div>
-      <h2 class="section-title" style="color:#fff;">Walk on the Moon.<br>Explore Mars.<br>Experience the Universe.</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.6);">Up to 7 guests explore the cosmos together in an exciting, walk-around VR. No permanent installation required</p>
-      <p class="body-text">Trekking the Cosmos runs on our VR Odyssey platform — the most versatile immersive experience you can offer. Guests move freely together through five cosmic environments, sharing the experience in real time. It sets up and breaks down in hours. Your operations team will love it as much as your visitors do.</p>
-      <ul class="feat-list">
-        <li>Up to 7 guests simultaneously. True walk-around, untethered VR</li>
-        <li>5-scene space journey: Lunar surface → Mars colonies → Galaxy → Black Hole</li>
-        <li>Portable and easy to set up. No permanent installation required</li>
-        <li>Social &amp; collaborative. Guests can interact with each other inside VR</li>
-      </ul>
-      <div class="img-pair" style="gap:4px;">
-        <img src="images/trekking_guests.png" alt="Family experiencing Trekking the Cosmos VR together" style="height: 210px; object-fit: cover; flex: 1.3; object-position: center top;">
-        <img src="images/trekking_blackhole.png" alt="Black hole scene inside Trekking the Cosmos VR" style="height: 210px; object-fit: cover; flex: 0.7;">
-      </div>
-      <a href="#" class="cta-btn" style="background-color: rgb(42, 1, 129);"><span style="color: rgb(255, 255, 255);">Explore this Space Journey</span></a>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ═══ 5. INDOOR 4-SEAT MOTION UNIT ═══ -->
-  <div>
-    <div style="background: linear-gradient(160deg, #1a0a2e 0%, #2d1250 60%, #1a0a2e 100%); min-height: 200px; display: flex; align-items: center; justify-content: center; padding: 48px 44px; text-align: center;">
-      <div>
-        <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:14px;">For Galleries &amp; Science Centers</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Indoor VR</h2>
-        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">The full Pulseworks experience inside.</p>
-      </div>
-    </div>
-    <img src="images/indoor_4seat_real.jpg" alt="Indoor 4-Seat VR Motion Unit installed at science center" class="section-img" style="max-height: 400px; object-fit: cover; object-position: center 30%;">
-    <div class="section-body">
-      <span class="badge-rev">Revenue Generator</span>
-      <div class="eyebrow">For Galleries &amp; Science Centers</div>
-      <h2 class="section-title">Wow Your Guests<br>with VR Inside</h2>
-      <p class="section-sub">The Indoor 4-Seat Motion Unit brings the full Pulseworks experience inside your existing footprint.</p>
-      <p class="body-text">Designed for science centers, natural history museums, and any institution with floor space, the Indoor 4-Seat Motion Unit delivers the same powerful combination of motion seating, wireless VR headsets, and premium immersive content — all in a compact, self-contained package that fits right inside your galleries or lobby.</p>
-      <ul class="feat-list">
-        <li>4-seat pneumatic motion platform</li>
-        <li>Widely available content to fit your institution</li>
-        <li>Ideal for lobbies, existing gallery spaces, and theaters</li>
-        <li>Revenue-share model. Zero upfront financial risk</li>
-      </ul>
-
-      <a href="#" class="cta-btn">Explore Indoor VR for Your Space &nbsp;→</a>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ═══ 6. MICHAEL MULLER UNDERWATER SERIES ═══ -->
+  <!-- ═══ 4. GALÁPAGOS UNDERWATER SERIES ═══ -->
   <div>
     <div style="background: linear-gradient(160deg, #00111e 0%, #002b44 60%, #00111e 100%); min-height: 280px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
       <div>
         <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:16px;">VR Content Coming Soon</div>
-        <div style="font-size: 44px; margin: 16px 0 14px; opacity: 0.55; letter-spacing: 8px;">🦈 &nbsp; 🐋 &nbsp; 🦭</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#fff; margin:0 0 12px; line-height:1.15;">Michael Muller<br>Underwater Series</h2>
-        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">The world's most daring underwater photographer.<br>Now inside your institution.</p>
+        <h2 style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Galápagos &amp; Sharks<br>Underwater Series</h2>
+
       </div>
     </div>
+    <img src="images/sharks-backdrop.jpg" alt="Sharks underwater — Galápagos &amp; Sharks VR Series" class="section-img" style="max-height:400px; object-fit:cover; object-position:center 40%;">
     <div class="section-body">
       <div class="eyebrow">A Voyage Into the Ocean</div>
-      <p class="body-text">Famed underwater photographer and filmmaker Michael Muller spent 18 months traveling from the Galápagos Islands to Cuba to the Arctic, capturing wildlife encounters that have never been seen in immersive VR. Two titles are in production now, expected Q4 2026:</p>
+      <p class="body-text">Famed underwater photographer and filmmaker Michael Muller ventured deep into the ocean, from the Galápagos Islands to Cuba to the Arctic, capturing wildlife encounters that have never been seen in immersive VR. Two titles are in production now, expected Q4 2026:</p>
       <div class="two-tile">
         <div class="tile" style="border-top: 3px solid #0077b6;">
           <div class="tile-title">Galápagos</div>
-          <p class="tile-text">Sea lions, whale sharks, marine iguanas. The most pristine ocean ecosystems on Earth, captured in breathtaking VR. A living National Geographic experience.</p>
+          <p class="tile-text">Home to species found nowhere else on Earth. Dive alongside marine iguanas, Galápagos sea lions, whale sharks and giant tortoises, creatures shaped by millions of years of island isolation. Now in immersive VR.</p>
         </div>
         <div class="tile" style="border-top: 3px solid #001f3f;">
           <div class="tile-title">Sharks</div>
-          <p class="tile-text">Great whites, hammerheads, tiger sharks face to face. Muller's most iconic encounters reimagined for your visitors' most unforgettable moment.</p>
+          <p class="tile-text">Great whites, hammerheads, tiger sharks, face to face. Iconic encounters captured to wow your visitors and help them gain a front-row seat to the ocean wonders.</p>
         </div>
-      </div>
-      <div class="quote-block" style="background:#e8f4fb; border-left-color:#0077b6;">
-        <p class="quote-text">Available on our Outdoor VR Container and Indoor 4-Seat Motion Units. The same 200TB of stunning footage, two premium experiences for every type of institution.</p>
-        <span class="quote-attr" style="color:#0077b6;">Available Across Pulseworks Platforms</span>
       </div>
       <a href="#" class="cta-outline" style="border-color:#0077b6; color:#0077b6;">Let's connect to learn more</a>
     </div>
@@ -299,132 +261,120 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ 7. VR SAFARI ═══ -->
+  <!-- ═══ 5. DEEP IN THE HEART OF AFRICA — Two-Part VR Series ═══ -->
   <div>
-    <div style="background: linear-gradient(160deg, #0f2010 0%, #1c4010 50%, #0f2010 100%); min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+    <div style="background: linear-gradient(160deg, #0f2010 0%, #1c4010 50%, #0f2010 100%); min-height: 260px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
       <div>
         <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:16px;">VR Content Coming Soon</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px;">VR Safari</h2>
-        <p style="font-family:'Lora',serif; font-style:italic; font-size:17px; color:rgba(255,255,255,0.7); margin:0;">Enter Africa's Great Rift Valley.</p>
+        <h2 style="font-family:'Playfair Display',serif; font-size:40px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.1;">Deep in the Heart<br>of Africa</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:17px; color:rgba(255,255,255,0.7); margin:0;">Two signature VR experiences — one magnificent continent.</p>
       </div>
     </div>
-    <img src="images/VR_SAFARI.png" alt="VR Safari filming in the African wilderness" class="section-img" style="max-height:300px; object-fit:cover; object-position:center 30%;">
+    <img src="images/VR_SAFARI.png" alt="VR Safari — filming in the African wilderness" class="section-img" style="max-height:300px; object-fit:cover; object-position:center 30%;">
+
     <div class="section-body" style="background:#f7f4fb;">
-      <div class="eyebrow">Immersive Wildlife Experience</div>
-      <p class="body-text">Transport your visitors to one of the most biodiverse regions on Earth. VR Safari places guests face-to-face with African elephants crossing the savanna, eye-level with a leopard in the acacia treetops, and within arm's reach of Mountain Gorillas in their highland rainforest habitat.</p>
-      <ul class="feat-list">
-        <li>An exciting exploration of Africa's Great Rift Valley</li>
-        <li>Stunning shots of African elephants, Leopard, Cheetahs, Mountain Gorillas and more</li>
-        <li>Motion-synchronized 4D effects</li>
-      </ul>
-      <a href="#" class="cta-btn">Learn More About VR Safari &nbsp;→</a>
-    </div>
-  </div>
+      <p class="body-text">Transport your visitors to one of the most biodiverse regions on Earth. Our "Deep in the Heart of Africa" VR series delivers two unforgettable experiences — each showcasing Africa's wild splendor from a completely different perspective.</p>
 
-  <!-- ═══ 8. PLATFORM CALLOUT ═══ -->
-  <div class="platform-bar">
-    <div class="platform-bar-label">VR Experiences Available — Indoors &amp; Outdoors</div>
-    <div class="platform-cards">
-      <div class="p-card">
-        <img src="images/outdoor_vr_exterior.jpg" alt="Outdoor VR Container" style="width:100%; height:160px; object-fit:cover; object-position: center 40%; display:block;">
-        <div class="p-card-body">
-          <div class="p-card-title">Outdoor VR Container</div>
-          <div class="p-card-text">Permanent all-weather destination &nbsp;·&nbsp; 8 seats &nbsp;·&nbsp; 4D motion + effects &nbsp;·&nbsp; Custom wildlife murals &nbsp;·&nbsp; Year-round revenue engine</div>
-        </div>
-      </div>
-      <div class="p-card">
-        <img src="images/indoor_4seat_real.jpg" alt="Indoor 4-Seat Motion Unit" style="width:100%; height:160px; object-fit:cover; object-position: center 30%; display:block;">
-        <div class="p-card-body">
-          <div class="p-card-title">Indoor 4-Seat Motion Unit</div>
-          <div class="p-card-text">4-seat motion platform + effects &nbsp;·&nbsp; Custom wildlife signage &nbsp;·&nbsp; Year-round revenue engine</div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- ── Experience 1: African Wildlife Safari ── -->
+      <div class="exp-card">
+        <h3 class="exp-card-title">VR Safari</h3>
+        <p class="exp-card-sub">Face to face with Africa's most iconic creatures.</p>
+        <p class="body-text" style="margin-bottom:18px;">Go eye-to-eye with the giants of the savanna. Guests experience breath-taking close-up encounters with African elephants on the move, leopards resting in acacia treetops, cheetahs mid-sprint, and Mountain Gorillas in their highland rainforest — all brought to vivid life with motion-synchronized 4D effects.</p>
 
-  <div class="divider"></div>
+        <div class="img-pair">
+          <img src="images/VR_SAFARI.png" alt="African Wildlife Safari — filming on location" style="height:200px; object-fit:cover; object-position:center 30%;">
+          <div class="img-ph" style="height:200px;">
+            <span>[ wildlife encounter<br>close-up shot<br>— photo TBD ]</span>
+          </div>
+        </div>
 
-  <!-- ═══ 9. DIGITAL LEARNING PACK ═══ -->
-  <div>
-    <div style="background: linear-gradient(135deg, #7B3F9E 0%, #4a1f6e 100%); padding: 56px 44px; text-align: center;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.5); text-transform:uppercase; margin-bottom:14px;">Add-On Revenue Stream</div>
-      <h2 style="font-family:'Playfair Display',serif; font-size:34px; font-weight:900; color:#fff; margin:0 0 18px; line-height:1.18;">Digital Learning Pack</h2>
-      <ul style="list-style:none; padding:0; margin:0 0 18px; text-align:left; display:inline-block;">
-        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">A simple add-on sold at online checkout</li>
-        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">Zero downloads required — any device, instant access</li>
-        <li style="font-family:'Lora',serif; font-style:italic; font-size:15px; color:rgba(255,255,255,0.8); padding:5px 0;">Guests experience it at the institution and take it home</li>
-      </ul>
-      <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:18px; color:rgba(255,255,255,0.65); margin:0;">Turn one visit into a lasting experience.</p>
-    </div>
-    <img src="images/digital_learning_pack.jpg" alt="Digital Learning Pack — No Download Required, works on any device" class="section-img" style="width:480px; display:block; margin:0 auto;">
-    <div class="section-body">
-      <span class="badge-rev">Revenue Generator</span>
-      <div class="eyebrow">Frictionless Digital Add-On</div>
-      <p class="body-text">The Digital Learning Pack is your easiest new revenue stream, offered right at the moment of online ticket purchase. No app, no download, any device. Visitors arrive more engaged, explore more deeply, and leave with content that extends the experience long after they go home.</p>
-      <div style="display:flex; gap:14px; margin:20px 0 26px;">
-        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
-          <div style="font-size:28px; margin-bottom:10px;">🎫</div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">Pre-Visit</div>
-          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Digital enhancement sold at checkout. Frictionless upsell</p>
-        </div>
-        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
-          <div style="font-size:28px; margin-bottom:10px;">📱</div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">During Visit</div>
-          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Interactive visitor guide. No download, any device, instant access</p>
-        </div>
-        <div style="flex:1; text-align:center; padding:22px 14px; background:#f4effe; border-radius:8px;">
-          <div style="font-size:28px; margin-bottom:10px;">🎓</div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:#7B3F9E; letter-spacing:1.5px; text-transform:uppercase;">Post-Visit</div>
-          <p style="font-family:'Montserrat',sans-serif; font-size:11px; color:#4a4a68; margin:8px 0 0; line-height:1.55;">Educational content + digital keepsake to take home</p>
-        </div>
+        <ul class="feat-list" style="margin-bottom:0;">
+          <li>Intimate close-up encounters: elephants, leopards, cheetahs, mountain gorillas &amp; more</li>
+          <li>Sweeping shots across Africa's savanna, forests and highlands</li>
+          <li>Motion-synchronized 4D effects throughout</li>
+        </ul>
       </div>
-      <div class="quote-block">
-        <p class="quote-text">"Easy to use and informational. Definitely recommend it is a fun experience overall."</p>
-        <span class="quote-attr">★★★★★ — Visitor Feedback</span>
+
+      <!-- ── Experience 2: Rift Valley Rush ── -->
+      <div class="exp-card" style="margin-bottom:0;">
+        <div class="exp-card-eyebrow" style="color:#8a5a00;">Feature Experience No. 2 &nbsp;·&nbsp; VR Jeep Safari</div>
+        <h3 class="exp-card-title">Rift Valley Rush: A Jeep Safari Adventure</h3>
+        <p class="exp-card-sub">Strap in — Africa's most rugged terrain awaits.</p>
+        <p class="body-text" style="margin-bottom:18px;">Take the front seat of a jeep barreling through Africa's Great Rift Valley. Guests feel every bump, every lurch, and every heart-stopping moment as the landscape unfolds — volcanic ridges, sweeping plains, and the raw, untamed energy of the world's most dramatic rift. A high-adrenaline adventure unlike anything else at your zoo.</p>
+
+        <div class="img-ph-warm" style="height:220px; border-radius:6px; overflow:hidden; margin-bottom:18px;">
+          <span>[ jeep ride through the<br>Great Rift Valley<br>— photo TBD ]</span>
+        </div>
+
+        <ul class="feat-list" style="margin-bottom:0;">
+          <li>Thrilling first-person jeep ride through Africa's Great Rift Valley</li>
+          <li>Rugged terrain, volcanic ridges and sweeping open plains</li>
+          <li>High-intensity motion platform synchronized to every twist and turn</li>
+          <li>A perfect companion to the African Wildlife Safari experience</li>
+        </ul>
       </div>
-      <a href="#" class="cta-btn">Learn More About the Digital Learning Pack</a>
+
+      <div style="margin-top:28px;">
+        <a href="#" class="cta-btn">Learn More About Our Africa VR Series &nbsp;→</a>
+      </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- ═══ 10. MISSION: WILD EXPLORER ═══ -->
+  <!-- ═══ 6. ANIMAL IDENTIFIER ═══ -->
   <div>
-    <div style="background: linear-gradient(160deg, #0d2010 0%, #163020 100%); min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+    <div style="background: linear-gradient(160deg, #071420 0%, #0d2235 60%, #071420 100%); min-height: 220px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
       <div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.18;">Mission:<br>Wild Explorer</h2>
-        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">An exciting scavenger hunt for families</p>
+        <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:14px;">New Add-On Revenue Stream</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Animal Identifier</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">Take a photo. Get the answer. Instantly.</p>
       </div>
     </div>
-    <img src="images/wildlife_explorer_zoomed_in.png" alt="Family enjoying Wild Explorer scavenger hunt at museum" class="section-img">
+    <div style="background:#f4f0e6; text-align:center; padding:0;">
+      <img src="images/identify_animal.png" alt="Animal Identifier — point, snap, discover" style="max-height:440px; width:auto; display:inline-block;">
+    </div>
     <div class="section-body" style="background:#f7f4fb;">
-      <span class="badge-new" style="margin-left:4px;">Launching Soon</span>
-      <div class="eyebrow">Family Experience Add-On</div>
-      <p class="body-text">Mission: Wild Explorer helps families explore the institution in a fun, educational scavenger-hunt. Families receive RFID-enabled Explorer Badges and follow clues through your exhibits, collecting physical collectible trading cards, scanning QR-based puzzle stations, and unlocking digital achievements along the way. It deepens engagement with your existing collection and keeps families coming back to complete their set.</p>
+      <span class="badge-new">Launching Soon</span>&nbsp;<span class="badge-rev">New Add-On Revenue Stream</span>
+      <div class="eyebrow">Instant Species Recognition</div>
+      <h2 class="section-title">Know Every Animal<br>at Your Zoo</h2>
+      <p class="section-sub">A frictionless new experience that turns every animal encounter into a learning moment.</p>
+      <p class="body-text">Visitors simply point their phone at any animal, snap a photo, and instantly receive a full identification — species name, habitat, diet, conservation status and more. No app download required, works on any device, and connects seamlessly to your existing ticketing as an easy upsell at checkout.</p>
       <ul class="feat-list">
-        <li>RFID Explorer Badges. Unique to each visit, touchless interaction</li>
-        <li>Physical collectible trading cards dispensed throughout the institution</li>
-        <li>QR-based puzzle stations woven into existing exhibits</li>
-        <li>Take-home digital content extends engagement beyond the visit</li>
-        <li>Fully branded to your institution; from finding animals at a zoo to airplanes on an aircraft carrier</li>
+        <li>Take a picture and visitors have it instantly identified</li>
+        <li>Works on any device — no download needed</li>
+        <li>Provides digital content for visitors to continue the experience at home</li>
+        <li>Easy to add on to existing ticket upsells</li>
       </ul>
-      <a href="#" class="cta-btn">Bring Wild Explorer to Your Institution &nbsp;→</a>
+      <a href="#" class="cta-btn">Learn More About Animal Identifier &nbsp;→</a>
     </div>
   </div>
 
-  <!-- ═══ 11. STATS BAR ═══ -->
-  <div class="stats-bar">
-    <div>
-      <span class="stat-num">50+</span>
-      <span class="stat-label">Partner Institutions</span>
+  <div class="divider"></div>
+
+  <!-- ═══ 7. MISSION: WILD EXPLORER ═══ -->
+  <div>
+    <div style="background: linear-gradient(160deg, #0d2010 0%, #163020 100%); min-height: 220px; display: flex; align-items: center; justify-content: center; padding: 52px 44px; text-align: center;">
+      <div>
+        <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.45); text-transform:uppercase; margin-bottom:14px;">New Add-On Revenue Stream</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#fff; margin:0 0 10px; line-height:1.15;">Mission:<br>Wild Explorer</h2>
+        <p style="font-family:'Lora',serif; font-style:italic; font-size:16px; color:rgba(255,255,255,0.65); margin:0;">A Collectible Scavenger Hunt Adventure for Families</p>
+      </div>
     </div>
-    <div>
-      <span class="stat-num">$0</span>
-      <span class="stat-label">Upfront Risk to You</span>
-    </div>
-    <div>
-      <span class="stat-num">2027</span>
-      <span class="stat-label">Spots Filling Now</span>
+    <img src="images/collectible_cards.png" alt="Mission Wild Explorer — collectible trading cards" class="section-img" style="max-height:420px; object-fit:cover; object-position:center;">
+    <div class="section-body" style="background:#f7f4fb;">
+      <span class="badge-new">Launching Soon</span>
+      <div class="eyebrow">Family Experience Add-On</div>
+      <h2 class="section-title">Turn Your Zoo Into<br>an Adventure</h2>
+      <p class="section-sub">Families explore, scan, collect — and keep coming back for more.</p>
+      <p class="body-text">Mission: Wild Explorer sends families on a quest through your zoo. Following clues to find collectible card dispensers, they use their RFID Explorer Badge to scan and collect beautifully designed trading cards — each one unique to a species in your collection. A QR code on every card unlocks take-home digital content, extending engagement well beyond the visit.</p>
+      <ul class="feat-list">
+        <li>Solve clues to find collectible card dispenser locations throughout your zoo</li>
+        <li>Use an RFID badge to scan and collect a collectible card</li>
+        <li>QR code on the card provides take-home digital content, extending engagement beyond the visit</li>
+        <li>Fully branded to your zoo — from card design to badge and signage</li>
+      </ul>
+      <a href="#" class="cta-btn">Bring Wild Explorer to Your Zoo &nbsp;→</a>
     </div>
   </div>
 
@@ -442,7 +392,7 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ 12. MEET THE TEAM ═══ -->
+  <!-- ═══ 7. MEET THE TEAM ═══ -->
   <div class="team-wrap">
     <h2 class="team-h">Meet the Team</h2>
     <p class="team-sub">The people behind the wonder</p>
@@ -478,24 +428,22 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ 13. ON THE HORIZON ═══ -->
+  <!-- ═══ 8. ON THE HORIZON ═══ -->
   <div class="horizon-wrap">
     <div class="horizon-eye">R&amp;D &amp; Innovation</div>
     <h2 class="horizon-h">On the Horizon</h2>
     <p class="horizon-sub">"Always Building What's Next..."</p>
-    <div class="horizon-cards">
-      <div class="h-card">
-        <div class="h-card-title">Immersive Audio &amp; Visitor Guides</div>
-        <p class="h-card-text">Immersive audio storytelling tours that bring your exhibits to life. Available in multiple languages. Guests wear headsets and experience rich, narrated audio journeys woven through your existing collection. A powerful new way to deepen engagement across diverse audiences.</p>
-      </div>
+    <div class="h-card">
+      <div class="h-card-title">Immersive Audio &amp; Visitor Guides</div>
+      <p class="h-card-text">Immersive audio storytelling tours that bring your exhibits to life. Available in multiple languages. Guests wear headsets and experience rich, narrated audio journeys woven through your existing collection. A powerful new way to deepen engagement across diverse audiences.</p>
     </div>
-    <p class="horizon-note" style="font-size:12px; color:rgba(255,255,255,0.918);">R&amp;D renders from Orion — coming soon</p>
+    <p style="font-family:'Montserrat',sans-serif; font-size:12px; color:rgba(255,255,255,0.9); margin-top:36px; font-style:italic;">R&amp;D renders from Orion — coming soon</p>
   </div>
 
   <!-- ═══ FINAL CTA ═══ -->
   <div class="final-cta">
     <h2>Ready to Grow in 2027?</h2>
-    <p>2027 partnership spots are filling fast. Let's find the right Pulseworks experience for your institution — zero financial risk, all the wonder, all the upside.</p>
+    <p>2027 partnership spots are filling fast. Let's find the right Pulseworks experience for your zoo — zero financial risk, all the wonder, all the upside.</p>
     <a href="#">Connect With a Growth Advisor</a>
     <p class="final-fine">Let's explore ways you can grow!</p>
   </div>
@@ -503,8 +451,8 @@
   <!-- ═══ PARTNER SHOWCASE ═══ -->
   <div style="background: #080212; padding: 56px 40px; text-align: center;">
     <div style="font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:14px;">Trusted By</div>
-    <h2 style="font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:#fff; margin:0 0 10px;">Proud Partners of Leading Institutions Across the U.S.</h2>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:18px 28px; max-width:580px; margin:0 auto;">
+    <h2 style="font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:#fff; margin:0 0 28px;">Proud Partners of Leading Institutions Across the U.S.</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px 20px; max-width:580px; margin:0 auto;">
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">Georgia Aquarium</span>
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">Space Center Houston</span>
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">The Museum of Flight</span>
@@ -516,8 +464,11 @@
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">U.S. Air Force</span>
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">Smithsonian Udvar-Hazy Center</span>
       <span style="font-family:'Montserrat',sans-serif; font-size:12px; font-weight:800; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1px solid rgba(255,255,255,0.12); border-radius:4px;">MOSI</span>
+    </div>
     <p style="font-family:'Montserrat',sans-serif; font-size:14px; font-weight:600; color:#ffffff; margin:28px 0 0; letter-spacing:1px;">... among many others</p>
   </div>
+
+  <!-- ═══ FOOTER ═══ -->
   <div class="footer">
     <div class="footer-logo">PULSEWORKS</div>
     <div class="footer-tag">We Offer Wonder!</div>
@@ -527,7 +478,6 @@
       <a href="#">Our Work</a>
       <a href="#">Get in Touch</a>
     </div>
-
     <hr class="footer-hr">
     <div class="footer-addr" style="color:rgb(255,255,255);">
       Pulseworks &nbsp;·&nbsp; Virtual Reality &amp; Immersive Entertainment<br>
